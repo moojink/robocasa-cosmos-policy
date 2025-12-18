@@ -308,14 +308,6 @@ assert (
     mujoco.__version__ == "3.2.6"
 ), "MuJoCo version must be 3.2.6. Please run pip install mujoco==3.2.6"
 
-import numpy
-
-assert numpy.__version__ in [
-    "1.23.2",
-    "1.23.3",
-    "1.23.5",
-], "numpy version must be either 1.23.{2,3,5}. Please install one of these versions."
-
 import robosuite
 
 robosuite_version = [int(e) for e in robosuite.__version__.split(".")]
